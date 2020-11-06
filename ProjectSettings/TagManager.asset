@@ -48,6 +48,9 @@ TagManager:
   - name: Ground
     uniqueID: 1291761389
     locked: 0
+  - name: mort
+    uniqueID: 2300748503
+    locked: 0
   - name: Obstacles
     uniqueID: 3401236465
     locked: 0
@@ -56,4 +59,7 @@ TagManager:
     locked: 0
   - name: GUI
     uniqueID: 3752500959
+    locked: 0
+  - name: Foreground
+    uniqueID: 3454937609
     locked: 0
