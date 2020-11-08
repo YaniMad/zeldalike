@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Represents the cardinal directions (South, North, West, East)
 public enum CardinalDirections { CARDINAL_S, CARDINAL_N, CARDINAL_W, CARDINAL_E };
@@ -22,6 +23,11 @@ public class PlayerBehavior : MonoBehaviour
     public Sprite m_backSprite = null;
 
     public GameObject m_fireBall = null; // Object the player can shoot
+
+
+    public GameObject m_paperPanel = null;
+    public Image m_paperImage = null;
+
 
     public GameObject m_map = null;
     public DialogManager m_dialogDisplayer;
@@ -46,7 +52,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         // If a dialog is on screen, the player should not be updated
         // If the map is displayed, the player should not be updated
-        if (m_dialogDisplayer.IsOnScreen() || m_map.activeSelf)
+        if (m_dialogDisplayer.IsOnScreen() || m_map.activeSelf || m_paperPanel.activeSelf)
         {
             return;
         }
@@ -123,7 +129,9 @@ public class PlayerBehavior : MonoBehaviour
         //   then a dialog is set to the dialogManager
         // - If not, then the player will shoot a fireball
         if (Input.GetKeyDown(KeyCode.Space))
-        {
+        {   
+            m_paperPanel.SetActive(false);
+
             if (m_closestNPCDialog != null)
             {
                 m_dialogDisplayer.SetDialog(m_closestNPCDialog.GetDialog());
@@ -193,6 +201,13 @@ public class PlayerBehavior : MonoBehaviour
             {
                 m_dialogDisplayer.SetDialog(instantDialog.GetDialog());
             }
+        }
+        else if (collision.tag == "Paper")
+        {
+            m_paperImage.sprite = collision.GetComponent<CollectablePaper>().imageToShow;
+            m_paperPanel.SetActive(true);
+            Destroy(collision.gameObject);
+
         }
     }
 
