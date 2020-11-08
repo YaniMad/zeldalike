@@ -5791,8 +5791,8 @@ Tilemap:
   - first: {x: 2, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 31
-      m_TileSpriteIndex: 95
+      m_TileIndex: 99
+      m_TileSpriteIndex: 129
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6332,7 +6332,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 86
-      m_TileSpriteIndex: 109
+      m_TileSpriteIndex: 122
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6359,7 +6359,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 87
-      m_TileSpriteIndex: 110
+      m_TileSpriteIndex: 117
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11018,7 +11018,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e52776847d749934bba679c17ba14c98, type: 2}
   - m_RefCount: 85
     m_Data: {fileID: 11400000, guid: 3399db513faa9ae4fb7262d043566f89, type: 2}
-  - m_RefCount: 98
+  - m_RefCount: 97
     m_Data: {fileID: 11400000, guid: 8c9354ef3f8da644695c91cefd15211a, type: 2}
   - m_RefCount: 87
     m_Data: {fileID: 11400000, guid: 1176d1e64f47ed8458e407c4a32472df, type: 2}
@@ -11154,7 +11154,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 05390b13be3caf5418b2999504144701, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 0905229384402f848a40ea56ed7c870b, type: 2}
-  - m_RefCount: 64
+  - m_RefCount: 65
     m_Data: {fileID: 11400000, guid: 7e42f175ec2b6754f86fa79d7fd500db, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -11351,7 +11351,7 @@ Tilemap:
   - m_RefCount: 85
     m_Data: {fileID: -1602722953875541976, guid: a7c974abc820d4f41b9e87ad3421915e,
       type: 3}
-  - m_RefCount: 98
+  - m_RefCount: 97
     m_Data: {fileID: -5219703106641253085, guid: a7c974abc820d4f41b9e87ad3421915e,
       type: 3}
   - m_RefCount: 87
@@ -11383,26 +11383,25 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -6954373650818423693, guid: 259f330e5f41e784f8d5657ebab467f7,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 8782210360577971963, guid: 259f330e5f41e784f8d5657ebab467f7,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -7751923677181485471, guid: 259f330e5f41e784f8d5657ebab467f7,
       type: 3}
@@ -11415,8 +11414,9 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 1514983942089655318, guid: f210c376f3ff7f341afb2029437d6377,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -6954373650818423693, guid: 259f330e5f41e784f8d5657ebab467f7,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -7561479792379609132, guid: f210c376f3ff7f341afb2029437d6377,
       type: 3}
@@ -11435,7 +11435,7 @@ Tilemap:
   - m_RefCount: 16
     m_Data: {fileID: -6489575874070298648, guid: f210c376f3ff7f341afb2029437d6377,
       type: 3}
-  - m_RefCount: 64
+  - m_RefCount: 65
     m_Data: {fileID: -6976088168538603931, guid: f210c376f3ff7f341afb2029437d6377,
       type: 3}
   m_TileMatrixArray:
@@ -31120,7 +31120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!156049354 &1112758013
 Grid:
   m_ObjectHideFlags: 0
@@ -43438,7 +43438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!19719996 &3866980547134534994
 TilemapCollider2D:
   m_ObjectHideFlags: 0
