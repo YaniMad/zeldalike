@@ -9,6 +9,7 @@ TagManager:
   - InstantDialog
   - Fireball
   - Paper
+  - Marco
   layers:
   - Default
   - TransparentFX

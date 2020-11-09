@@ -37,6 +37,11 @@ public class FireBehavior : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Marco")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
         // Destroys the fireball when it hits something, except the player or another fireball
         // (to prevent the fireball to be destroyed as soon as it is created)
         if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Fireball")
